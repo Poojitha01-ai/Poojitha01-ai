@@ -32,4 +32,5 @@ pipeline:
                   identifier: Run_1
                   spec:
                     shell: Sh
+                    command: Run test
                   description: Run
