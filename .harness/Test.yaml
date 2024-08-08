@@ -32,5 +32,5 @@ pipeline:
                   identifier: Run_1
                   spec:
                     shell: Sh
-                    command: npm run
+                    command: run
                   description: Run
