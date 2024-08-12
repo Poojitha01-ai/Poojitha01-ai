@@ -30,4 +30,6 @@ pipeline:
                   type: Run
                   name: Run_1
                   identifier: Run_1
-                  spec: {}
+                  spec:
+                    shell: Sh
+                    command: echo "Hello world"
