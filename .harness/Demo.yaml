@@ -1,0 +1,35 @@
+pipeline:
+  name: Demo
+  identifier: Demo
+  projectIdentifier: default_project
+  orgIdentifier: default
+  tags: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: Poojitha01ai
+        repoName: poojitha01-ai
+        build: <+input>
+  stages:
+    - stage:
+        name: Build stage
+        identifier: Build_stage
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+          execution:
+            steps:
+              - step:
+                  type: Run
+                  name: Run_1
+                  identifier: Run_1
+                  spec:
+                    shell: Sh
+                    command: echo "Hello"
