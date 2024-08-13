@@ -50,5 +50,5 @@ pipeline:
                   identifier: ArtifactoryUpload_1
                   spec:
                     connectorRef: ArtifactoryConnector
-                    target: poojitha.jfrog.io/ui/admin/repositories
+                    target: poojitha.jfrog.io/artifactory/api/maven/poojitha-001
                     sourcePath: /harness/poojitha.txt
