@@ -52,3 +52,12 @@ pipeline:
                     connectorRef: ArtifactoryConnector
                     target: poojitha.jfrog.io/ui/admin/repositories/local/poojitha-00
                     sourcePath: /harness/poojitha.txt
+              - step:
+                  type: BuildAndPushDockerRegistry
+                  name: BuildAndPushDockerRegistry_1
+                  identifier: BuildAndPushDockerRegistry_1
+                  spec:
+                    connectorRef: dockerconnector
+                    repo: poojitha01-ai
+                    tags:
+                      - testdeplyoment
