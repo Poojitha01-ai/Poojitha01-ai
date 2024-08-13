@@ -45,14 +45,6 @@ pipeline:
                     shell: Sh
                     command: echo "Hello World"
               - step:
-                  type: ArtifactoryUpload
-                  name: ArtifactoryUpload_1
-                  identifier: ArtifactoryUpload_1
-                  spec:
-                    connectorRef: ArtifactoryConnector
-                    target: poojitha.jfrog.io/ui/admin/repositories/local/poojitha-00
-                    sourcePath: /harness/poojitha.txt
-              - step:
                   type: BuildAndPushDockerRegistry
                   name: BuildAndPushDockerRegistry_1
                   identifier: BuildAndPushDockerRegistry_1
