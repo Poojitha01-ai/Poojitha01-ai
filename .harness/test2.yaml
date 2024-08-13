@@ -32,11 +32,7 @@ pipeline:
                   identifier: Run_1
                   spec:
                     shell: Sh
-                    command: |-
-                      echo 'Hello world'
-                      pwd
-                      touch poojitha.txt
-                      ls -lrtha
+                    command: echo "Hello world"
               - step:
                   type: Background
                   name: Background_1
@@ -51,4 +47,4 @@ pipeline:
                   spec:
                     connectorRef: ArtifactoryConnector
                     target: artifactory/api/docker/docker
-                    sourcePath: docker
+                    sourcePath: /harness/poojitha.txt
