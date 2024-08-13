@@ -47,4 +47,4 @@ pipeline:
                   spec:
                     connectorRef: ArtifactoryConnector
                     target: https://poojitha.jfrog.io/artifactory/api/docker/docker
-                    sourcePath: docker
+                    sourcePath: https://poojitha.jfrog.io/ui/admin/repositories/local/docker/edit
