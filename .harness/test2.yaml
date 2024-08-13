@@ -32,7 +32,11 @@ pipeline:
                   identifier: Run_1
                   spec:
                     shell: Sh
-                    command: echo "Hello world"
+                    command: |-
+                      echo 'Hello world'
+                      pwd
+                      touch poojitha.txt
+                      ls -lrtha
               - step:
                   type: Background
                   name: Background_1
