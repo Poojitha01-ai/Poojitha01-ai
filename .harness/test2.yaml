@@ -43,12 +43,12 @@ pipeline:
                   identifier: Background_1
                   spec:
                     shell: Sh
-                    command: echo"Hello World"
+                    command: echo "Hello World"
               - step:
                   type: ArtifactoryUpload
                   name: ArtifactoryUpload_1
                   identifier: ArtifactoryUpload_1
                   spec:
                     connectorRef: ArtifactoryConnector
-                    target: poojitha.jfrog.io/artifactory/api/maven/poojitha-001
+                    target: /poojitha.jfrog.io/ui/admin/repositories
                     sourcePath: /harness/poojitha.txt
