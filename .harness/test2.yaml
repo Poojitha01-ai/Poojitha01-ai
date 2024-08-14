@@ -44,12 +44,3 @@ pipeline:
                   spec:
                     shell: Sh
                     command: echo "Hello World"
-              - step:
-                  type: BuildAndPushDockerRegistry
-                  name: BuildAndPushDockerRegistry_1
-                  identifier: BuildAndPushDockerRegistry_1
-                  spec:
-                    connectorRef: dockerconnector
-                    repo: poojitha01-ai
-                    tags:
-                      - testdeplyoment
