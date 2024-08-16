@@ -44,3 +44,11 @@ pipeline:
                   spec:
                     shell: Sh
                     command: echo "Hello"
+              - step:
+                  type: ArtifactoryUpload
+                  name: ArtifactoryUpload_1
+                  identifier: ArtifactoryUpload_1
+                  spec:
+                    connectorRef: ArtifactoryConnector
+                    target: poojithaa43@gmail.com
+                    sourcePath: /harness
