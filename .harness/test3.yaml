@@ -45,11 +45,10 @@ pipeline:
                     shell: Sh
                     command: echo 'Sample file'
               - step:
-                  type: BuildAndPushDockerRegistry
-                  name: BuildAndPushDockerRegistry_1
-                  identifier: BuildAndPushDockerRegistry_1
+                  type: ArtifactoryUpload
+                  name: ArtifactoryUpload_1
+                  identifier: ArtifactoryUpload_1
                   spec:
-                    connectorRef: dockerconnector
-                    repo: poojitha01ai
-                    tags:
-                      - latest
+                    connectorRef: ArtifactoryConnector
+                    target: poojithaa43@gmail.com
+                    sourcePath: /harness
