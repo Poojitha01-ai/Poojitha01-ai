@@ -52,3 +52,12 @@ pipeline:
                     connectorRef: ArtifactoryConnector
                     target: poojithaa43@gmail.com
                     sourcePath: /harness
+              - step:
+                  type: BuildAndPushDockerRegistry
+                  name: BuildAndPushDockerRegistry_1
+                  identifier: BuildAndPushDockerRegistry_1
+                  spec:
+                    connectorRef: Docker
+                    repo: poojitha01ai
+                    tags:
+                      - latest
