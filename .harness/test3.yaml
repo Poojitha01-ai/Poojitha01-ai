@@ -49,7 +49,7 @@ pipeline:
                   name: BuildAndPushDockerRegistry_1
                   identifier: BuildAndPushDockerRegistry_1
                   spec:
-                    connectorRef: Docker
-                    repo: poojitha01-ai
+                    connectorRef: account.DockerHub
+                    repo: poojitha01ai
                     tags:
                       - latest
